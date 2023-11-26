@@ -194,7 +194,7 @@ function App() {
     setcheckout(true)
   }
 else{
-  window.location.href = 'http://localhost:3000/login';
+  window.location.href = 'https://outifitzen.onrender.com/login';
 }
     
  } 
@@ -203,7 +203,7 @@ else{
   localStorage.clear();
     setLoggedin(false)
     setuserdata([])
-    window.location.href = 'http://localhost:3000/';
+    window.location.href = 'https://outifitzen.onrender.com/';
   }
   useEffect(() => {
     const cartData = {
