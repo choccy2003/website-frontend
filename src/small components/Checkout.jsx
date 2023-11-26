@@ -28,7 +28,7 @@ const Checkout = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post('http://localhost:3001/users/order', formData)
+      .post('https://website-s8u7.onrender.com/users/order', formData)
       .then((response) => {
         console.log('Order added successfully:', response.data);
         props.setcheckout(false)

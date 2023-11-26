@@ -16,7 +16,7 @@ const Adminpage = (props) => {
     const navigate = useNavigate();
     const handleView=async()=>{
         try {
-            const response = await fetch('http://localhost:3001/users/listproducts', {
+            const response = await fetch('https://website-s8u7.onrender.com/users/listproducts', {
                 headers: { Authorization: `Bearer ${props.token}` },
               });
             const jsonData = await response.json();
@@ -27,7 +27,7 @@ const Adminpage = (props) => {
     }
     const [ordersChanged, setOrdersChanged] = useState(false);
     useEffect(()=>{
-        axios.get('http://localhost:3001/admin/getorders', {
+        axios.get('https://website-s8u7.onrender.com/admin/getorders', {
             headers: { Authorization: `Bearer ${props.token}` },
           }).then((res)=>{
             const reversed = [...res.data].reverse();

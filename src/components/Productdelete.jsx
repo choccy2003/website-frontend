@@ -27,7 +27,7 @@ const Productdelete = (props) => {
         event.preventDefault();
 
         axios
-            .post('http://localhost:3001/admin/deleteproduct', product, {
+            .post('https://website-s8u7.onrender.com/admin/deleteproduct', product, {
                 headers: { Authorization: `Bearer ${props.token}` },
               })
             .then((response) => {

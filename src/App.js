@@ -22,7 +22,7 @@ function App() {
   var [best_array, setarray] = useState([])
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3001/users/listproducts');
+      const response = await fetch('https://website-s8u7.onrender.com/users/listproducts');
       const jsonData = await response.json();
       setarray(jsonData);
     } catch (error) {
@@ -212,7 +212,7 @@ else{
       cart: cart_array
     };
 
-    axios.post('http://localhost:3001/users/addtocart', cartData)
+    axios.post('https://website-s8u7.onrender.com/users/addtocart', cartData)
       .then(response => {
         
       })
@@ -233,7 +233,7 @@ else{
     if(state){
      
       console.log(usertoken)
-      axios.post('http://localhost:3001/users/fetchuserdetails', tokenData).then(response =>{
+      axios.post('https://website-s8u7.onrender.com/users/fetchuserdetails', tokenData).then(response =>{
         setuserdata(response.data.data);
         updatecartarr(response.data.data.cart)
 

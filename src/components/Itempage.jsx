@@ -49,7 +49,7 @@ const Itempage = (props) => {
   }
   const handleReviewSubmit = async () => {
     try {
-     axios.post('http://localhost:3001/users/submitreview',reviewdata)
+     axios.post('https://website-s8u7.onrender.com/users/submitreview',reviewdata)
      .then(response=>{
       if(response.data==='already reviewed'){
         toast.error("Already submitted review!!")
@@ -77,7 +77,7 @@ const Itempage = (props) => {
       usertoken: usertoken
     };
 
-axios.post('http://localhost:3001/users/fetchuserdetails', tokenData)
+axios.post('https://website-s8u7.onrender.com/users/fetchuserdetails', tokenData)
  .then(response=>{
   
    setreviewdata({
@@ -99,7 +99,7 @@ axios.post('http://localhost:3001/users/fetchuserdetails', tokenData)
  const fetchReview=async ()=>{
   
   
-  axios.post('http://localhost:3001/users/getreview',{product_id:id})
+  axios.post('https://website-s8u7.onrender.com/users/getreview',{product_id:id})
   .then((response)=>{
     setreview(response.data)
   })
@@ -187,7 +187,7 @@ axios.post('http://localhost:3001/users/fetchuserdetails', tokenData)
       cart: props.cart_array
     };
 
-    axios.post('http://localhost:3001/users/addtocart', cartData)
+    axios.post('https://website-s8u7.onrender.com/users/addtocart', cartData)
       .then(response => {
         
         

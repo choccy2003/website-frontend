@@ -23,7 +23,7 @@ const Signup = () => {
         event.preventDefault();
 
         axios
-            .post('http://localhost:3001/users/signup', formData)
+            .post('https://website-s8u7.onrender.com/users/signup', formData)
             .then((response) => {
                 console.log('Signed in successfully:', response.data);
                 if(response.data.msg==="Signup successful!"){

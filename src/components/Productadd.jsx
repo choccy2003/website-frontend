@@ -27,7 +27,7 @@ const Productadd = (props) => {
         event.preventDefault();
 
         axios
-            .post('http://localhost:3001/admin/addproduct', product, {
+            .post('https://website-s8u7.onrender.com/admin/addproduct', product, {
                 headers: { Authorization: `Bearer ${props.token}` },
               })
             .then((response) => {

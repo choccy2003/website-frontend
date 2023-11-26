@@ -21,7 +21,7 @@ const Login = (props) => {
         event.preventDefault();
 
         axios
-            .post('http://localhost:3001/users/login', formData)
+            .post('https://website-s8u7.onrender.com/users/login', formData)
             .then((response) => {
                 
                 if (response.data.msg === 'Login successful!') {
@@ -42,7 +42,7 @@ const Login = (props) => {
                 }
                 else if(response.data==="admin login"){
 
-                    axios.post('http://localhost:3001/admin/adminlogin',formData).then((response)=>{
+                    axios.post('https://website-s8u7.onrender.com/admin/adminlogin',formData).then((response)=>{
                         const token = response.data.token;
                         props.setToken(token)
                         console.log(token)

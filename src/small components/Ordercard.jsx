@@ -18,7 +18,7 @@ const handleChange = (newStatus) => {
       event.preventDefault();
 
       axios
-          .post('http://localhost:3001/admin/orderstate', status, {
+          .post('https://website-s8u7.onrender.com/admin/orderstate', status, {
               headers: { Authorization: `Bearer ${props.token}` },
             })
           .then((response) => {
