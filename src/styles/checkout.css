@@ -1,0 +1,113 @@
+/* styles.css */
+
+.checkout-container {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    
+    padding-bottom: 30px;
+  }
+  
+  .checkout-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .checkout-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .checkout-input-field {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .checkout-select-field {
+    appearance: none;
+    padding-right: 30px;
+    width: 160px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .checkout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6A983C;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover {
+    background-color: #46760A;
+  }
+  
+  .checkout-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+  }
+  
+  .checkout-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-summary-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .checkout-radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .checkout-radio-label input {
+    margin-right: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black; 
+    border-radius: 50%;
+    background-color: white;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .checkout-radio-label input:checked {
+    border-color: #46760A; 
+    background-color: #6A983C; 
+  }
+
+  .login-btn:hover{
+    background-color: #46760A !important;
+    cursor:pointer;
+  }
+  .google-login-btn:hover{
+    background-color: rgb(153,37,37) !important;
+    cursor:pointer;
+  }
